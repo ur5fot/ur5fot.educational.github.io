@@ -1,0 +1,62 @@
+@import "lib/_reset.scss";
+@import "lib/_mixin.scss";
+@import "lib/_colors_variables.scss";
+@import "_general.scss";
+
+* {
+  box-sizing: border-box;
+  // overflow: hidden;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 35px;
+}
+
+body {
+  background: $aqua;
+  color: $red;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+#main {
+  display: table;
+  margin: 0 auto;
+}
+
+#form {
+  input {
+    border: none;
+    background: #fff;
+    font-size: 1rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: $black 0 0 20px;
+    padding: 0;
+    margin-right: 1rem;
+    //display: table;
+    &:focus {
+
+    }
+  }
+  input[type='submit'] {
+    display: none;
+  }
+  input[type='number'] {
+    padding-left:.3rem;
+  }
+  input[name="result"] {
+    box-shadow: $red 0 0 20px;
+  }
+}
+
+
+ 
+
+ 
+
+
